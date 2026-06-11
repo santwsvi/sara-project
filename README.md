@@ -162,11 +162,13 @@ Os diagramas completos (UML/C4) estão na [Documentação de Projeto](./SARA%20-
 | Diagrama de Arquitetura | Detalhe da Arquitetura |
 | :---: | :---: |
 | **Visão Geral (C4 — Contexto)** | **Contêineres (C4 — Nível 2)** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Contexto do SARA" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Contêineres" width="120px" height="120px"> |
-| **Modelo de Dados (Entidades)** | **Fluxo de Avaliação de Risco** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Entidade-Relacionamento" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Sequência UC-01" width="120px" height="120px"> |
+| <img src="./docs/diagramas/c4_contexto.png" alt="Diagrama de Contexto do SARA" width="380px"> | <img src="./docs/diagramas/c4_conteineres.png" alt="Diagrama de Contêineres" width="380px"> |
+| **Modelo de Domínio (Classes)** | **Fluxo de Avaliação de Risco (Sequência)** |
+| <img src="./docs/diagramas/classes.png" alt="Diagrama de Classes" width="300px"> | <img src="./docs/diagramas/seq_uc01.png" alt="Diagrama de Sequência UC-01" width="380px"> |
 | **Infraestrutura (Cloud/K8s)** | **Máquina de Estados do Caso** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Implantação" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Estados" width="120px" height="120px"> |
+| <img src="./docs/diagramas/implantacao.png" alt="Diagrama de Implantação" width="380px"> | <img src="./docs/diagramas/estados_caso.png" alt="Diagrama de Estados do Caso" width="220px"> |
+
+> 🖼️ Os diagramas acima são gerados em PlantUML e versionados em [`/docs/diagramas`](./docs/diagramas). O diagrama de casos de uso completo está em [`casos_uso.png`](./docs/diagramas/casos_uso.png), e os demais (SSDs, componentes, comunicação, estados da transação) estão na [Documentação de Projeto](./SARA%20-%20Documenta%C3%A7%C3%A3o%20de%20Projeto.docx).
 
 ---
 
@@ -385,12 +387,15 @@ serve -s frontend/dist
 
 ### 🌐 Aplicação Web (Painel do Analista)
 
+> [!NOTE]
+> 📸 As capturas reais da interface serão adicionadas conforme as telas forem implementadas. Substitua os marcadores abaixo pelos arquivos em `./docs/screenshots/`.
+
 | Tela | Captura de Tela |
 | :---: | :---: |
 | **Dashboard de Risco** | **Fila de Alertas** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Dashboard de Risco" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Fila de Alertas" width="120px" height="120px"> |
+| <img src="https://placehold.co/320x200/EAF1FA/1F4E79?text=Dashboard+de+Risco" alt="Dashboard de Risco" width="320px"> | <img src="https://placehold.co/320x200/EAF1FA/1F4E79?text=Fila+de+Alertas" alt="Fila de Alertas" width="320px"> |
 | **Detalhe do Caso** | **Configuração de Regras** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Detalhe do Caso" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Configuração de Regras" width="120px" height="120px"> |
+| <img src="https://placehold.co/320x200/EAF1FA/1F4E79?text=Detalhe+do+Caso" alt="Detalhe do Caso" width="320px"> | <img src="https://placehold.co/320x200/EAF1FA/1F4E79?text=Config.+de+Regras" alt="Configuração de Regras" width="320px"> |
 
 ### 💻 Exemplo de Saída no Terminal (API de Avaliação de Risco)
 
